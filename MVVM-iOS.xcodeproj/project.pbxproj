@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,9 +18,7 @@
 		4535CBEB27132E2C0081DD4E /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4535CBEA27132E2C0081DD4E /* MainCoordinator.swift */; };
 		4535CBEE271331050081DD4E /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4535CBED271331050081DD4E /* Storyboarded.swift */; };
 		4535CC052713325F0081DD4E /* XIbed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4535CC042713325F0081DD4E /* XIbed.swift */; };
-		45729FB82717352C00BF1576 /* UnitTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45729FB72717352C00BF1576 /* UnitTestCase.swift */; };
-		45729FBC2717354D00BF1576 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45729FBB2717354D00BF1576 /* XCTest.framework */; };
-		45729FBD2717354D00BF1576 /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 45729FBB2717354D00BF1576 /* XCTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		45AB4675271DBDEE00DFA2E5 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 45AB4674271DBDEE00DFA2E5 /* SwiftyJSON */; };
 		45D1BB99270F37B7005D0CF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D1BB98270F37B7005D0CF5 /* AppDelegate.swift */; };
 		45D1BB9B270F37B7005D0CF5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D1BB9A270F37B7005D0CF5 /* SceneDelegate.swift */; };
 		45D1BB9D270F37B7005D0CF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D1BB9C270F37B7005D0CF5 /* ViewController.swift */; };
@@ -29,20 +27,6 @@
 		45D1BBB5270F390A005D0CF5 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D1BBB4270F390A005D0CF5 /* Webservice.swift */; };
 		45D1BBB8270F3B8D005D0CF5 /* BooksModelClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D1BBB7270F3B8D005D0CF5 /* BooksModelClass.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		45729FBE2717354D00BF1576 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				45729FBD2717354D00BF1576 /* XCTest.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4535CBB22711E6D50081DD4E /* BooksListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksListViewModel.swift; sourceTree = "<group>"; };
@@ -56,7 +40,6 @@
 		4535CBEA27132E2C0081DD4E /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		4535CBED271331050081DD4E /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		4535CC042713325F0081DD4E /* XIbed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIbed.swift; sourceTree = "<group>"; };
-		45729FB72717352C00BF1576 /* UnitTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestCase.swift; sourceTree = "<group>"; };
 		45729FBB2717354D00BF1576 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		45D1BB95270F37B7005D0CF5 /* MVVM-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		45D1BB98270F37B7005D0CF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45729FBC2717354D00BF1576 /* XCTest.framework in Frameworks */,
+				45AB4675271DBDEE00DFA2E5 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,9 +84,9 @@
 		4535CBD22712D0CA0081DD4E /* Books View */ = {
 			isa = PBXGroup;
 			children = (
-				4535CBCA2712BC250081DD4E /* cell */,
 				4535CBBF271202370081DD4E /* BookListVC.swift */,
 				4535CBC0271202370081DD4E /* BookListVC.xib */,
+				4535CBCA2712BC250081DD4E /* cell */,
 			);
 			path = "Books View";
 			sourceTree = "<group>";
@@ -136,14 +119,6 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
-		45729FB6271734F700BF1576 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				45729FB72717352C00BF1576 /* UnitTestCase.swift */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
 		45729FBA2717354D00BF1576 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,7 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				45D1BB97270F37B7005D0CF5 /* MVVM-iOS */,
-				45729FB6271734F700BF1576 /* Tests */,
 				45D1BB96270F37B7005D0CF5 /* Products */,
 				45729FBA2717354D00BF1576 /* Frameworks */,
 			);
@@ -178,8 +152,8 @@
 				45D1BBB1270F38E1005D0CF5 /* ViewModel */,
 				45D1BBB0270F38DC005D0CF5 /* View */,
 				45D1BBAF270F38D5005D0CF5 /* Model */,
-				45D1BB98270F37B7005D0CF5 /* AppDelegate.swift */,
 				45D1BB9A270F37B7005D0CF5 /* SceneDelegate.swift */,
+				45D1BB98270F37B7005D0CF5 /* AppDelegate.swift */,
 				45D1BB9C270F37B7005D0CF5 /* ViewController.swift */,
 				45D1BBA1270F37BB005D0CF5 /* Assets.xcassets */,
 				45D1BBA3270F37BB005D0CF5 /* LaunchScreen.storyboard */,
@@ -199,8 +173,8 @@
 		45D1BBB0270F38DC005D0CF5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4535CBDE27132D520081DD4E /* Book Details */,
 				4535CBD22712D0CA0081DD4E /* Books View */,
+				4535CBDE27132D520081DD4E /* Book Details */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -231,13 +205,15 @@
 				45D1BB91270F37B7005D0CF5 /* Sources */,
 				45D1BB92270F37B7005D0CF5 /* Frameworks */,
 				45D1BB93270F37B7005D0CF5 /* Resources */,
-				45729FBE2717354D00BF1576 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "MVVM-iOS";
+			packageProductDependencies = (
+				45AB4674271DBDEE00DFA2E5 /* SwiftyJSON */,
+			);
 			productName = "MVVM-iOS";
 			productReference = 45D1BB95270F37B7005D0CF5 /* MVVM-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -265,6 +241,9 @@
 				Base,
 			);
 			mainGroup = 45D1BB8C270F37B7005D0CF5;
+			packageReferences = (
+				45AB4673271DBDEE00DFA2E5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 45D1BB96270F37B7005D0CF5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -295,7 +274,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				45D1BBB8270F3B8D005D0CF5 /* BooksModelClass.swift in Sources */,
-				45729FB82717352C00BF1576 /* UnitTestCase.swift in Sources */,
 				45D1BB9D270F37B7005D0CF5 /* ViewController.swift in Sources */,
 				4535CBB32711E6D50081DD4E /* BooksListViewModel.swift in Sources */,
 				4535CBC1271202370081DD4E /* BookListVC.swift in Sources */,
@@ -499,6 +477,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		45AB4673271DBDEE00DFA2E5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		45AB4674271DBDEE00DFA2E5 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 45AB4673271DBDEE00DFA2E5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 45D1BB8D270F37B7005D0CF5 /* Project object */;
 }

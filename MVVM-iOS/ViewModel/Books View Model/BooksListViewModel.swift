@@ -36,11 +36,11 @@ extension BooksViewModel {
 extension BooksViewModel {
     
     var title : String {
-        return booksVMResult.title ?? ""
+        return booksVMResult.name ?? ""
     }
     
-    var languages : [String] {
-        return booksVMResult.languages!
+    var author : String {
+        return booksVMResult.author ?? ""
     }
     
 }
